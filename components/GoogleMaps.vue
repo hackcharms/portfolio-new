@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import Icon from  "~/assets/images/mapmarker.png"
 export default {
   props: {
     lat: {
@@ -22,7 +23,7 @@ export default {
 
     icon: {
       type: String,
-      default: require('~/assets/images/mapmarker.png')
+      default: Icon
     }
   },
 
