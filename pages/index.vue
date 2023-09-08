@@ -65,6 +65,7 @@ export default {
   transform: translate(-25px, -50%);
 }
 #photo {
-  background-image: url('~assets/images/emilsgulbis.jpg');
+  background-image: url('/zubair-circle.png');
+  filter: drop-shadow(16px 16px 20px gray);
 }
 </style>
