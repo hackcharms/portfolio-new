@@ -1,4 +1,5 @@
-module.exports = {
+import type { Config } from "tailwindcss";
+const TailwindConfig: Partial<Config> = {
   theme: {
     extend: {
       colors: {
@@ -13,7 +14,6 @@ module.exports = {
         },
 
         gray: "#566075",
-        blue: "#4c33fb",
         primary: "#4c33fb",
       },
 
@@ -64,3 +64,4 @@ module.exports = {
   variants: {},
   plugins: [],
 };
+export default TailwindConfig;

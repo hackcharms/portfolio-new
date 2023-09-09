@@ -7,7 +7,7 @@
     <transition name="fadeScale">
       <div
         v-if="isOpen"
-        class="fixed inset-0 z-10 bg-black-90 flex justify-center items-center p-8"
+        class="fixed bg-white-default inset-0 z-10 bg-black-90 flex justify-center items-center p-8"
       >
         <nav>
           <ul>
@@ -15,8 +15,8 @@
               <nuxt-link
                 :to="link.to"
                 :aria-lable="link.label"
-                class="relative uppercase text-3xl text-white text-center font-bold px-10 py-2 block hover:border"
-                exact-active-class="border border-white-20"
+                class="relative uppercase text-3xl text-primary text-center font-bold px-10 py-2 block hover:border"
+                exact-active-class="border border-red"
               >
                 {{ link.title }}
               </nuxt-link>

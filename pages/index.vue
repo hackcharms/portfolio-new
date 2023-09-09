@@ -1,9 +1,9 @@
 <template>
   <div class="flex items-center">
-    <div class="w-490px flex-grow-0">
+    <div class="w-1/2 flex-grow-0">
       <div
         id="photo"
-        class="bg-center bg-white bg-cover bg-no-repeat pb-150 shadow"
+        class="bg-center bg-white bg-contain bg-no-repeat pb-150"
       ></div>
     </div>
     <div v-mouse-move class="flex-1 pl-8 pt-16">
@@ -12,10 +12,7 @@
       >
         {{ firstName }}
         <div class="relative">
-          <div
-            class="absolute w-120px right-100 top-50 border-blue border-b-5 line-transform"
-          ></div>
-          <span class="text-blue">{{ lastName }}</span>
+          <span class="text-primary">{{ lastName }}</span>
         </div>
       </h1>
       <h2 class="mb-2">{{ position }}</h2>
@@ -25,47 +22,46 @@
     </div>
   </div>
 </template>
-
-<script>
-import { getAge } from '~/utils/functions'
-import { mouseMove } from '~/utils/directives'
+<script lang="ts" setup>
+import { getAge } from "~/utils/functions";
+import { vMouseMove } from "~/utils/directives";
+// withDirectives(VMouseMove)
 import {
   firstName,
   lastName,
   position,
   birthday,
-  aboutMe
-} from '~/docs/profile.json'
+  aboutMe,
+} from "~/docs/profile.json";
 
-export default {
-  directives: {
-    mouseMove
-  },
+useHead({
+  title: "",
+});
+definePageMeta({
+  layout: "default",
+});
+// export default {
+// data() {
+//   return {
+//     firstName,
+//     lastName,
+//     position,
+//     aboutMe
+//   }
+// },
 
-  data() {
-    return {
-      firstName,
-      lastName,
-      position,
-      aboutMe
-    }
-  },
-
-  computed: {
-    age() {
-      return getAge(birthday)
-    }
-  }
-}
+//   computed: {
+//     age() {
+//       return getAge(birthday)
+//     }
+//   }
+// }
 </script>
 
 <style scoped>
-
-.line-transform {
-  transform: translate(-25px, -50%);
-}
 #photo {
-  background-image: url('/zubair-circle.png');
+  background-image: url("/zubair-circle-2.png");
+  height: 100%;
   filter: drop-shadow(16px 16px 20px gray);
 }
 </style>

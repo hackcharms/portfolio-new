@@ -1,25 +1,25 @@
 <template>
   <div
     class="burger relative w-30px h-24px cursor-pointer"
-    :class="{ 'is-open': value }"
-    @click="$emit('input', !value)"
+    :class="{ 'is-open': modelValue }"
+    @click="$emit('update:modelValue', !modelValue)"
   >
     <!-- Three lines -->
     <div
       class="absolute top-0 border-t-2 border-b-2 w-full h-0"
-      :class="{ 'border-white': value }"
+      :class="{ 'border-white': modelValue }"
     ></div>
     <div
       class="absolute top-50 -mt-2px border-t-2 border-b-2 w-full h-0"
-      :class="{ 'opacity-0': value }"
+      :class="{ 'opacity-0': modelValue }"
     ></div>
     <div
       class="absolute bottom-0 border-t-2 border-b-2 w-full h-0"
-      :class="{ 'border-white': value }"
+      :class="{ 'border-white': modelValue }"
     ></div>
 
     <!-- ME NU -->
-    <template v-if="!value">
+    <template v-if="!modelValue">
       <span
         class="absolute top-0 right-100 w-full block leading-none text-center"
         >ME</span
@@ -32,16 +32,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    value: {
-      type: Boolean,
-      default: false,
-      required: true
-    }
-  }
-}
+<script lang="ts" setup>
+defineProps({
+  modelValue: {
+    type: Boolean,
+    default: false,
+    required: true,
+  },
+});
+const $emit = defineEmits<{
+  "update:modelValue": [modelValue: boolean];
+}>();
 </script>
 
 <style lang="scss" scoped>

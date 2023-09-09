@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-280px p-10 flex flex-col justify-between bg-blue text-white">
+  <aside class="w-280px p-10 flex flex-col justify-between bg-primary text-white">
     <header class="mb-5">
       <logo />
     </header>
@@ -18,7 +18,7 @@
 
       <dl>
         <dt class="font-bold">Find me on</dt>
-        <dd>
+        <!-- <dd>
           <ul class="flex">
             <li v-if="facebook" class="mr-4">
               <a
@@ -75,18 +75,18 @@
               </a>
             </li>
           </ul>
-        </dd>
+        </dd> -->
       </dl>
     </footer>
   </aside>
 </template>
 
 <script>
-import FacebookIcon from '~/assets/icons/facebook.svg?inline'
-import LinkedinIcon from '~/assets/icons/linkedin.svg?inline'
-import TwitterIcon from '~/assets/icons/twitter.svg?inline'
-import GithubIcon from '~/assets/icons/github.svg?inline'
-import StackOverflowIcon from '~/assets/icons/stackoverflow.svg?inline'
+// import FacebookIcon from '@/assets/icons/facebook.svg?inline'
+// import LinkedinIcon from '@/assets/icons/linkedin.svg?inline'
+// import TwitterIcon from '@/assets/icons/twitter.svg?inline'
+// import GithubIcon from '@/assets/icons/github.svg?inline'
+// import StackOverflowIcon from '@/assets/icons/stackoverflow.svg?inline'
 
 import {
   facebook,
@@ -97,13 +97,13 @@ import {
 } from '~/docs/social.json'
 
 export default {
-  components: {
-    FacebookIcon,
-    LinkedinIcon,
-    TwitterIcon,
-    GithubIcon,
-    StackOverflowIcon
-  },
+  // components: {
+  //   FacebookIcon,
+  //   LinkedinIcon,
+  //   TwitterIcon,
+  //   GithubIcon,
+  //   StackOverflowIcon
+  // },
 
   data() {
     return {
