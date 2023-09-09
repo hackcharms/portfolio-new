@@ -1,6 +1,8 @@
-import * as dayjs from "dayjs";
-export function getTotalYear(dateYYMMDD: string): string {
-  return dayjs()?.diff(dateYYMMDD, "years", true)?.toFixed(1);
+export function getTotalYear(dateMMDDYY: string): string {
+  var d1 = new Date();
+  var d2 = new Date(dateMMDDYY);
+  var diff = d1?.getTime() - d2?.getTime();
+  return (diff / (1000 * 60 * 60 * 24 * 365))?.toFixed(1);
 }
 export default {
   firstName: "Zubair",
@@ -13,9 +15,9 @@ export default {
     country: "Maharashtra",
   },
   position: "Full Stack Developer",
-  birthday: "03/04/1997",
+  // birthday: "03/04/1997",
   aboutMe: ` ${getTotalYear(
-    "1998-04-03"
-  )} Year Old Passionate Developer having ${getTotalYear("2020-08-01")} 
+    "04/03/1998"
+  )} Year Old Passionate Developer having ${getTotalYear("08/01/2020")} 
   Years of experience in web development technology, Have work experience on JavaScript, TypeScript, VueJs, NuxtJs, Vuetify, PHP, Laravel, MySQL`,
 };

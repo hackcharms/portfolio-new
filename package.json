@@ -15,7 +15,5 @@
     "nuxt": "^3.5.2",
     "sass": "^1.63.4"
   },
-  "dependencies": {
-    "dayjs": "^1.11.9"
-  }
+  "dependencies": {}
 }
