@@ -1,5 +1,7 @@
-import { getTotalYear } from "~/utils/functions";
-
+import * as dayjs from "dayjs";
+export function getTotalYear(dateYYMMDD: string): string {
+  return dayjs()?.diff(dateYYMMDD, "years", true)?.toFixed(1);
+}
 export default {
   firstName: "Zubair",
   lastName: "Ahamd",

@@ -1,8 +1,3 @@
-import * as dayjs from "dayjs";
-export function getTotalYear(dateYYMMDD: string): string {
-  return dayjs().diff(dateYYMMDD, "years", true)?.toFixed(1);
-}
-
 export const getWindowWidth = function () {
   const el = document.documentElement;
   const body = document.getElementsByTagName("body")[0];
