@@ -1,15 +1,7 @@
-export const getAge = function (dateString: string) {
-  const today = new Date();
-  const birthDate = new Date(dateString);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-
-  return age;
-};
+import * as dayjs from "dayjs";
+export function getTotalYear(dateYYMMDD: string): string {
+  return dayjs().diff(dateYYMMDD, "years", true)?.toFixed(1);
+}
 
 export const getWindowWidth = function () {
   const el = document.documentElement;
