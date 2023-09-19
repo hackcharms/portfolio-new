@@ -5,8 +5,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
     "deploy": "gh-pages -d .output/public",
+    "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
