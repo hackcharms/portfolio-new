@@ -12,16 +12,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    expandSidebar() {
-      // return this.$route.name
-      return ["index", "contact"].includes(this.$route.name);
-    },
-  },
-};
+<script lang="ts" setup>
+const expandSidebar = computed(() => {
+  return ["index", "contact"].includes(useRoute().name as string);
+});
 </script>
-<style lang="scss">
-@import "@/assets/css/";
-</style>

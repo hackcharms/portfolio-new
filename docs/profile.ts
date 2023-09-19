@@ -16,12 +16,13 @@ export default {
   },
   position: "Full Stack Developer",
   // birthday: "03/04/1997",
-  aboutMe: `<p> ${getTotalYear(
-    "04/03/1998"
-  )} Year Old, Passionate and Results-driven Full stack Developer having ${getTotalYear(
-    "08/01/2020"
-  )} 
-  Years of experience in web development technology, implementing diverse applications and solutions using JavaScript, TypeScript, MySql, PHP, Laravel, Vue.js (complete suit), Nuxt.js. Seeking challenging opportunities to leverage my extensive development expertise and deliver impactful results.</p>
-<p>Additionally I am dedicated to continuous learning, staying updated on industry trends and emerging technologies to deliver professional and effective solutions.<p>
-<p> PS: Always open to collaborate open source.</p>`,
+  aboutMe: `<p> </p>`,
+  //   ${getTotalYear(
+  //     "04/03/1998"
+  //   )} Year Old, Passionate and Results-driven Full stack Developer having ${getTotalYear(
+  //     "08/01/2020"
+  //   )}
+  //   Years of experience in web development technology, implementing diverse applications and solutions using JavaScript, TypeScript, MySql, PHP, Laravel, Vue.js (complete suit), Nuxt.js. Seeking challenging opportunities to leverage my extensive development expertise and deliver impactful results.</p>
+  // <p>Additionally I am dedicated to continuous learning, staying updated on industry trends and emerging technologies to deliver professional and effective solutions.<p>
+  // <p> PS: Always open to collaborate open source.</p>`,
 };
