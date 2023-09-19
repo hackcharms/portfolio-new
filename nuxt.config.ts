@@ -6,4 +6,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/index.scss"],
   modules: ["@nuxtjs/tailwindcss"],
+  app: {
+    baseURL: "/portfolio-new/",
+    buildAssetsDir: "assets",
+  },
 });
