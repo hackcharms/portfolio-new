@@ -28,9 +28,6 @@ import { vMouseMove } from "~/utils/directives";
 import profileData from "~/docs/profile.js";
 
 useHead({
-  base: {
-    href: "https://hackcharms.github.io/portfolio-new/",
-  },
   title:'Zubair Ahmad'
 });
 definePageMeta({
