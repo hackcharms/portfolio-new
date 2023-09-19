@@ -18,23 +18,25 @@
         }}</span>
       </h1>
       <h2 class="mb-2 text-4xl">{{ profileData.position }}</h2>
-      <div class="text-gray text-xl" v-html="profileData.aboutMe">
-      </div>
+      <div class="text-gray text-xl" v-html="profileData.aboutMe"></div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
 import { vMouseMove } from "~/utils/directives";
 // withDirectives(VMouseMove)
-import profileData  from "~/docs/profile.js";
+import profileData from "~/docs/profile.js";
 
 useHead({
-  title: "",
+  base: {
+    href: "https://hackcharms.github.io/portfolio-new/",
+  },
+  title:'Zubair Ahmad'
 });
 definePageMeta({
   layout: "default",
 });
-console.log(process.env)
+console.log(process.env);
 </script>
 
 <style scoped lang="scss">
