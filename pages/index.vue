@@ -18,9 +18,8 @@
         }}</span>
       </h1>
       <h2 class="mb-2 text-4xl">{{ profileData.position }}</h2>
-      <p class="text-gray text-xl">
-        {{ profileData.aboutMe }}
-      </p>
+      <div class="text-gray text-xl" v-html="profileData.aboutMe">
+      </div>
     </div>
   </div>
 </template>
