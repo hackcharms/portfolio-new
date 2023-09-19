@@ -29,6 +29,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Who I'm
+        run: |
+          git config --global user.email "hackcharms@gmail.com"
+          git config --global user.name "hackcharms"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
