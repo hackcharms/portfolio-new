@@ -42,6 +42,6 @@ jobs:
         run: yarn generate
       - name: Setup GIT and Deploy to GHPages
         run: |
-          git config --global user.name "GH Actions"
-          git config --global user.email "hackcharms@users.noreply.github.com"
+          git config --global user.name "hackcharms"
+          git config --global user.email "hackcharms@gmail.com"
           yarn deploy
