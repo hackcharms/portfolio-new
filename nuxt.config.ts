@@ -5,11 +5,6 @@ export default defineNuxtConfig({
   css: ["~/assets/css/index.scss"],
   modules: ["@nuxtjs/tailwindcss"],
   app: {
-    head: {
-      base: {
-        href: "https://hackcharms.github.io/portfolio-new/",
-      },
-    },
     // baseURL: "/portfolio-new/",
     buildAssetsDir: "assets",
   },
