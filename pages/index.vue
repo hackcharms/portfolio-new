@@ -34,6 +34,7 @@ useHead({
 definePageMeta({
   layout: "default",
 });
+console.log(process.env)
 </script>
 
 <style scoped lang="scss">
